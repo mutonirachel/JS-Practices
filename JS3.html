@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirm</title>
+</head>
+<body>
+   <!-- Confirm Box Redirection -->
+
+    <div class="id">
+        <h1>Hello, Welcome!!</h1>
+        <p>Click the button below to Sign Up</p>
+         <button onclick="getAnswer()">Click Here</button>
+
+         <script>
+         function getAnswer() {
+                const userAnswer = confirm("Do you have an account ?");
+                if( userAnswer == true ) {
+                 window.location.href = "login.html";
+                } else {
+                 window.location.href = "register.html";
+                }
+         }
+         </script>
+     </div> 
+</body>
+</html>
